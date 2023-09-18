@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Out</title>
+    <link rel="icon" href="../space-tourism-website-main/favicon.ico">
+    <link rel="stylesheet" href="../CSS/destination.css">
+    <script src="https://kit.fontawesome.com/05ec568796.js" crossorigin="anonymous" defer></script>
+    <script src="../JS/index.js" defer></script>
+    <script src="../JS/destination.js" defer></script>
+</head>
+<body>
+    <header class="primary-header">
+        <div class="top-line">
+            <div class="container">
+                <a href="./main.html"><img class="logo" src="../Images/shared/logo.svg" alt="logo"></a>
+                <div class="openMenu" aria-controls="mobile-navigation" aria-expanded="false"><i class="fa-solid fa-bars menu"></i></div>
+                <div class="closeMenu" aria-controls="mobile-navigation" aria-expanded="true"><i class="fa-solid fa-xmark close"></i></div>
+            </div>
+        </div>
+        <nav class="mobile-navigation" data-visible="false" >
+            <ul id="primary-navigation" class="primary-navigation">
+                <li>
+                    <a class="hover-underline-animation" href="./main.html" id="main1" onclick="addStateMain()">
+                    <span aria-hidden="true">00</span>
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a class="hover-underline-animation activer" href="./destination.html" id="destination1" onclick="addStateDestination()">
+                    <span aria-hidden="true">01</span>
+                    Destination
+                </a>
+            </li>
+
+            <li>
+                <a class="hover-underline-animation" href="./crew.html" id="crew1" onclick="addStateCrew()">
+                    <span aria-hidden="true">02</span>
+                    Crew
+                </a>
+            </li>
+
+            <li>
+                <a class="hover-underline-animation" href="./technology.html" id="technology1" onclick="addStateTechnology()">
+                    <span aria-hidden="true">03</span>
+                    Technology
+                </a>
+            </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page" id="destination">
+        <div class="planets-head">
+            <div class="container">
+                <div class="heading">
+                <h3><span>01</span> pick your destination</h3>
+                </div>
+
+                <div class="planet-image">
+                    <img class="slide" src="../Images/destination/image-moon.png" alt="planet Mars">
+                    <img class="slide" src="../Images/destination/image-mars.png" alt="planet Mars">
+                    <img class="slide" src="../Images/destination/image-europa.png" alt="planet Mars">
+                    <img class="slide" src="../Images/destination/image-titan.png" alt="planet Mars">
+                </div>
+
+                <div class="planet-navigation">
+                <ul id="myLinks">
+                    <li><a class="links active" onclick="currentSlide(1)"> Moon </a></li>
+                    <li><a class="links" onclick="currentSlide(2)"> Mars </a></li>
+                    <li><a class="links" onclick="currentSlide(3)"> Europa </a></li>
+                    <li><a class="links" onclick="currentSlide(4)"> Titan </a></li>
+                </ul> 
+                </div>
+
+                <div class="planets-text">
+                    <div class="information">
+                    <div class="first-column">
+                        <h2>Moon</h2>
+                        <p class="info-planet">See our planet as you’ve never seen it before. A perfect relaxing trip 
+                            away to help regain perspective and come back refreshed. While you’re there, take in some 
+                            history by visiting the Luna 2 and Apollo 11 landing sites.
+                        </p>
+                        <div class="line"></div>
+                        <div class="second-column">
+                            <p><small>avg. distance</small>384,400 km</p>
+                            <p><small>est. travel time</small>3 days</p>
+                        </div>
+                    </div>
+                    </div>
+    
+                    <div class="information">
+                    <div class="first-column">
+                        <h2>Mars</h2>
+                        <p class="info-planet">Don’t forget to pack your hiking boots. You’ll need them 
+                            to tackle Olympus Mons, the tallest planetary mountain in our solar system. 
+                            It’s two and a half times the size of Everest!
+                        </p>
+                        <div class="line"></div>
+                        <div class="second-column">
+                            <p><small>avg. distance</small>225 mil. km</p>
+                            <p><small>est. travel time</small>9 months</p>
+                        </div>
+                    </div>
+                    </div>
+    
+                    <div class="information">
+                    <div class="first-column">
+                        <h2>Europa</h2>
+                        <p class="info-planet">The smallest of the four Galilean moons orbiting Jupiter, 
+                            Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit 
+                            of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.
+                        </p>
+                        <div class="line"></div>
+                        <div class="second-column">
+                            <p><small>avg. distance</small>628 mil. km</p>
+                            <p><small>est. travel time</small>3 years</p>
+                        </div>
+                    </div>
+                    </div>
+    
+                    <div class="information">
+                    <div class="first-column">
+                        <h2>Titan</h2>
+                        <p class="info-planet">The only moon known to have a dense atmosphere other 
+                            than Earth, Titan is a home away from home (just a few hundred degrees colder!). 
+                            As a bonus, you get striking views of the Rings of Saturn.
+                        </p>
+                        <div class="line"></div>
+                        <div class="second-column">
+                            <p><small>avg. distance</small>1.6 bil. km</p>
+                            <p><small>est. travel time</small>7 years</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+    </div>      
+    
+</body>
+</html>

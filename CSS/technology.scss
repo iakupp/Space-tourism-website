@@ -1,0 +1,333 @@
+@import url(style.css);
+
+body{
+    background-image: url(../Images/technology/background-technology-mobile.jpg);
+    background-position: bottom center;
+}
+
+.container{
+    width: 100% !important;
+    padding: 0 !important;
+}
+.active{
+    background-color: var(--base-white-color) !important;
+    border-radius: 50%;
+    color: black !important;
+}
+
+
+
+.primary-header {
+ padding: 1.25em;
+}
+
+.page{
+    .container{
+        .heading{
+            padding: 1.75em;
+            h3{
+                font-size: 1em;
+                margin-bottom: 2em;
+                span{
+                    margin-right: .5em;
+                }
+            }
+        }
+        .technology-images{
+            .slide{
+                width: 100%;
+            }
+            #img1{
+                background-image: url(/Images/technology/image-launch-vehicle-landscape.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                max-width: 1000px;
+                height: 190px;
+            }
+            #img2{
+                background-image: url(/Images/technology/image-space-capsule-landscape.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                max-width: 1000px;
+                height: 190px;
+            }
+            #img3{
+                background-image: url(/Images/technology/image-spaceport-landscape.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                max-width: 1000px;
+                height: 190px;
+            }
+        }
+        // .technology-images-desktop{
+        //     display: none;
+        // }
+
+        #carousel{
+            max-width: 152px;
+            margin-inline: auto;
+            ul{
+                display: flex;
+                li{
+                    margin-right: 2em;
+                    &:last-of-type{
+                        margin-right: 0;
+                    }
+                }
+                a{
+                    color: var(--base-white-color);
+                    position: relative;
+                    display:block;
+                    margin: 2em auto 0 auto;
+                    padding-top: 8px;
+                    width: 40px;
+                    height: 40px;
+                    cursor: pointer;
+                    &:before{
+                        content: "";
+                        border: 1px solid var(--base-white-color) ;
+                        border-radius: 50%;
+                        display:block;
+                        position:absolute;
+                        width: 40px;
+                        height: 40px;
+                        top : 50%;
+                        left:50%;
+                        margin-top:-20px;
+                        margin-left:-20px;
+                    }
+                }
+            }
+        }
+        .technology-text{
+            padding: 1.75em;
+            .information{
+                font-family: var(--heading-1-2-3-4);
+                .title{
+                    font-size: 1em;
+                    color: var(--silver-color);
+                    text-transform: uppercase;
+                    margin-top: 2em;
+                }
+                .article-heading{
+                    text-transform: uppercase;
+                    font-size: 24px;
+                    margin-top: .5em;
+                }
+                .description{
+                    font-size: 1em;
+                    font-family: var(--subheading-2-5-navigation);
+                    color: var(--silver-color);
+                    letter-spacing: 1.6875px;
+                    line-height: 25px;
+                    max-width: 458px ;
+                    margin-inline: auto;
+                }
+            }
+        }
+        // .technology-text-desktop{
+        //     display: none;
+        //     padding: 1.75em;
+        //     .information-d{
+        //         font-family: var(--heading-1-2-3-4);
+        //         .title{
+        //             font-size: 1em;
+        //             color: var(--silver-color);
+        //             text-transform: uppercase;
+        //             margin-top: 2em;
+        //         }
+        //         .article-heading{
+        //             text-transform: uppercase;
+        //             font-size: 24px;
+        //             margin-top: .5em;
+        //         }
+        //         .description{
+        //             font-size: .8em;
+        //             font-family: var(--subheading-2-5-navigation);
+        //             color: var(--silver-color);
+        //             letter-spacing: 1.6875px;
+        //             line-height: 25px;
+        //             max-width: 458px ;
+        //             margin-inline: auto;
+        //         }
+        //     }
+        // }
+    }
+}
+
+
+
+
+@media (min-width: 800px){
+    body{
+        background-image: url(../Images/technology/background-technology-tablet.jpg); 
+        background-position: bottom center;
+    }
+    .active{
+        height: 60px !important;
+        width: 60px !important;
+    }
+    .page{
+        .container{
+            grid-template-rows: repeat(auto-fill, 1fr) ;
+            .technology-images{
+                grid-row: 4/ 4;
+                .slide{
+                    margin-inline: auto;
+                }
+                #img1,#img2,#img3{
+                    height: 310px;
+                }
+            }
+            // .technology-images-desktop{
+            //     display: none;
+            // }
+            #carousel{
+                max-width: 210px;
+                a{
+                    height: 60px !important;
+                    width: 60px !important;
+                    padding-top: 18px !important;
+                    &::before{
+                        height: 60px !important;
+                        width: 60px !important;
+                        margin-top:-30px !important;
+                        margin-left:-30px !important;
+                    }
+                }
+            }
+            .technology-text{
+                grid-row: 2 / 2;
+                .title{
+                    font-size: 24px !important;
+                }
+                .article-heading{
+                    font-size: 40px !important;
+                    margin-top: 0 !important;
+                }
+                .description{
+                    font-size: 1em;
+                    max-width: 458px !important;
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: 980px){
+    body{
+        background-image: url(../Images/technology/background-technology-tablet.jpg);
+        max-width: var(--desktop-width);
+        padding-inline: 5em;
+    }
+    .primary-header{
+        padding: unset !important;
+    }
+    .page{
+        .container{
+            max-width: 1240px;
+            gap: unset !important;
+            grid-template-columns: unset !important;
+            .heading{
+                margin-right: 12em;
+                grid-column: 1 / span 2;
+                grid-row: 1  ;
+                padding: unset !important;
+            }
+            #carousel{
+                grid-column: 1 ;
+                grid-row: 2 / span 3 ;
+                //margin-left: 8em;
+                ul{
+                    li{
+                        margin-right: unset !important;
+                    }
+                    flex-direction: column !important;
+                }
+            }
+            .technology-images{
+                grid-row: 4 / 4;
+                width: 514px;
+                max-width: 515px;
+                height: 527px;
+                margin-inline: unset !important;
+                #img1{
+                    background-image: url(/Images/technology/image-launch-vehicle-portrait.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center center;
+                    max-width: 430px;
+                    height: 527px;
+                }
+                #img2{
+                    background-image: url(/Images/technology/image-space-capsule-portrait.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center center;
+                    max-width: 430px;
+                    height: 527px;
+                }
+                #img3{
+                    background-image: url(/Images/technology/image-spaceport-portrait.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center center;
+                    max-width: 430px;
+                    height: 527px;
+                }
+            }
+            .technology-text{
+                grid-row: 2 / span  3;
+                grid-column: 2;
+                text-align: left;
+                width: 459px;
+                //max-width: 452px;
+                .title{
+                    font-size: 1em !important;
+                }
+                 .description{
+                     width: 314px !important;
+                     max-width: 100% !important;
+                     margin-inline: unset !important;
+                     height: 10em;
+                     font-size: .8em !important;
+                 }
+            }
+        }
+    }
+}
+
+@media (min-width:1003px){
+    .page{
+        .container{
+            h3{
+                letter-spacing: 0.6875px !important;
+            }
+
+        }
+    }
+}
+
+@media (min-width: 1350px){
+    body{
+        max-width: 1440px;
+    }
+    .page{
+        .container{
+            max-width: 1440px;
+            justify-content: space-around;
+            .technology-text{
+                margin-top: -2em;
+                .information{
+                    .article-heading{
+                        font-size: 48px !important;
+                    }
+                }
+            }
+        }
+    }
+}

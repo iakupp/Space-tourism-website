@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Out</title>
+    <link rel="icon" href="../space-tourism-website-main/favicon.ico">
+    <link rel="stylesheet" href="../CSS/crew.css">
+    <script defer src="https://kit.fontawesome.com/05ec568796.js" crossorigin="anonymous"></script>
+    <script defer src="../JS/index.js"></script>
+    <script src="../JS/crew.js" defer></script>
+</head>
+<body>
+    <header class="primary-header">
+        <div class="top-line">
+            <div class="container">
+                <a href="./main.html"><img class="logo" src="../Images/shared/logo.svg" alt="logo"></a>
+                <div class="openMenu" aria-controls="mobile-navigation" aria-expanded="false"><i class="fa-solid fa-bars menu"></i></div>
+                <div class="closeMenu" aria-controls="mobile-navigation" aria-expanded="true"><i class="fa-solid fa-xmark close"></i></div>
+            </div>
+        </div>
+        <nav class="mobile-navigation" data-visible="false" >
+            <ul id="primary-navigation" class="primary-navigation">
+                <li>
+                    <a class="hover-underline-animation" href="./main.html" id="main1" onclick="addStateMain()">
+                    <span aria-hidden="true">00</span>
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a class="hover-underline-animation" href="./destination.html" id="destination1" onclick="addStateDestination()">
+                    <span aria-hidden="true">01</span>
+                    Destination
+                </a>
+            </li>
+
+            <li>
+                <a class="hover-underline-animation activer" href="./crew.html" id="crew1" onclick="addStateCrew()">
+                    <span aria-hidden="true">02</span>
+                    Crew
+                </a>
+            </li>
+
+            <li>
+                <a class="hover-underline-animation" href="./technology.html" id="technology1" onclick="addStateTechnology()">
+                    <span aria-hidden="true">03</span>
+                    Technology
+                </a>
+            </li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="page" id="crew">
+        <div class="container">
+            <div class="heading">
+                <h3><span>02</span>meet your crew</h3>
+            </div>  
+
+            <div class="crew-avatars">
+                <img class="slide" src="../Images/crew/image-douglas-hurley.png" alt="Commander">
+                <img class="slide" src="../Images/crew/image-mark-shuttleworth.png" alt="Mission Specialist ">
+                <img class="slide" src="../Images/crew/image-victor-glover.png" alt="Pilot">
+                <img class="slide" src="../Images/crew/image-anousheh-ansari.png" alt="Flight engineer">
+                <div class="line"></div>
+            </div>
+
+            <div class="dot-slideshow" id="dots">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+
+            <div class="crew-text">
+                <div class="information">
+                    <p class="title">commander</p>
+                    <h2 class="article-heading">douglas hurley</h2>
+                    <p class="description">Douglas Gerald Hurley is an American 
+                        engineer, former Marine Corps pilot and former NASA astronaut. 
+                        He launched into space for the third time as commander of Crew 
+                        Dragon Demo-2.
+                    </p>
+                </div>
+                <div class="information">
+                    <p class="title">mision specialist</p>
+                    <h2 class="article-heading">MARK SHUTTLEWORTH</h2>
+                    <p class="description">Mark Richard Shuttleworth is the 
+                        founder and CEO of Canonical, the company behind the 
+                        Linux-based Ubuntu operating system. Shuttleworth became 
+                        the first South African to travel to space as a space 
+                        tourist.
+                    </p>
+                </div>
+                <div class="information">
+                    <p class="title">pilot</p>
+                    <h2 class="article-heading">victor glover</h2>
+                    <p class="description">Pilot on the first operational 
+                        flight of the SpaceX Crew Dragon to the International 
+                        Space Station. Glover is a commander in the U.S. Navy 
+                        where he pilots an F/A-18.He was a crew member of Expedition
+                         64, and served as a station systems flight engineer. 
+                    </p>
+                </div>
+                <div class="information">
+                    <p class="title">flight engineer</p>
+                    <h2 class="article-heading">anousheh ansari</h2>
+                    <p class="description">Anousheh Ansari is an Iranian 
+                        American engineer and co-founder of Prodea Systems. 
+                        Ansari was the fourth self-funded space tourist, the 
+                        first self-funded woman to fly to the ISS, and the first 
+                        Iranian in space. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

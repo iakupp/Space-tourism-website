@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Out</title>
+    <link rel="icon" href="../space-tourism-website-main/favicon.ico">
+    <link rel="stylesheet" href="/CSS/technology.css">
+    <script src="https://kit.fontawesome.com/05ec568796.js" crossorigin="anonymous" defer></script>
+    <script src="../JS/index.js" defer></script>
+    <script src="../JS/technology.js" defer></script>
+</head>
+<body>
+    <header class="primary-header">
+        <div class="top-line">
+            <div class="container">
+                <a href="./main.html"><img class="logo" src="../Images/shared/logo.svg" alt="logo"></a>
+                <div class="openMenu" aria-controls="mobile-navigation" aria-expanded="false"><i class="fa-solid fa-bars menu"></i></div>
+                <div class="closeMenu" aria-controls="mobile-navigation" aria-expanded="true"><i class="fa-solid fa-xmark close"></i></div>
+            </div>
+        </div>
+        <nav class="mobile-navigation" data-visible="false" >
+            <ul id="primary-navigation" class="primary-navigation">
+                <li>
+                    <a class="hover-underline-animation" href="./main.html" id="main1" onclick="addStateMain()">
+                    <span aria-hidden="true">00</span>
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a class="hover-underline-animation" href="./destination.html" id="destination1" onclick="addStateDestination()">
+                    <span aria-hidden="true">01</span>
+                    Destination
+                </a>
+            </li>
+
+            <li>
+                <a class="hover-underline-animation" href="./crew.html" id="crew1" onclick="addStateCrew()">
+                    <span aria-hidden="true">02</span>
+                    Crew
+                </a>
+            </li>
+
+            <li>
+                <a class="hover-underline-animation activer" href="./technology.html" id="technology1" onclick="addStateTechnology()">
+                    <span aria-hidden="true">03</span>
+                    Technology
+                </a>
+            </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page" id="technology">
+        <div class="container">
+
+
+            <div class="heading">
+                <h3><span>02</span>space launch 101</h3>
+            </div>  
+
+            <div class="technology-images">
+                <div class="slide" id="img1"></div>
+                <div class="slide" id="img2"></div>
+                <div class="slide" id="img3"></div>
+            </div>
+
+            <div id="carousel">
+                <ul>
+                    <li><a href="#" class="number active" onclick="currentSlide(1)">1</a></li>
+                    <li><a href="#" class="number" onclick="currentSlide(2)">2</a></li>
+                    <li><a href="#" class="number" onclick="currentSlide(3)">3</a></li>
+                </ul>
+            </div>
+        
+            <div class="technology-text">
+                <div class="information">
+                    <p class="title">the terminology ...</p>
+                    <h2 class="article-heading">launch vehicle</h2>
+                    <p class="description">A launch vehicle or carrier rocket is a rocket-propelled 
+                        vehicle used to carry a payload from Earth's surface to space, usually to Earth 
+                        orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 
+                        150 metres tall, it's quite an awe-inspiring sight on the launch pad!
+                    </p>
+                </div>
+                <div class="information">
+                    <p class="title">the terminology ...</p>
+                    <h2 class="article-heading">spaceport</h2>
+                    <p class="description">A spaceport or cosmodrome is a site for 
+                        launching (or receiving) spacecraft, by analogy to the seaport 
+                        for ships or airport for aircraft. Based in the famous Cape Canaveral, 
+                        our spaceport is ideally situated to take advantage of the Earth’s 
+                        rotation for launch.
+                    </p>
+                </div>
+                <div class="information">
+                    <p class="title">the terminology ...</p>
+                    <h2 class="article-heading">space capsule</h2>
+                    <p class="description">A space capsule is an often-crewed spacecraft 
+                        that uses a blunt-body reentry capsule to reenter the Earth's atmosphere 
+                        without wings. Our capsule is where you'll spend your time during the flight. 
+                        It includes a space gym, cinema, and plenty of other activities to 
+                        keep you entertained.
+                    </p>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+
+</body>
+</html>
